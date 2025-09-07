@@ -1,0 +1,41 @@
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.character-card h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.character-card p {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  color: #ccc;
+}

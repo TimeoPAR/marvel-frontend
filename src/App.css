@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 50px; /* taille réduite du logo */
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ed1d24; /* rouge Marvel */
+}
